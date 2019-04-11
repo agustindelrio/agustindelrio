@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.contenedor {
+    width: 80%;
+    margin: auto;
+}
+
+header {
+    background: rgb(26, 177, 177);
+    padding: 15px 0;
+}
+
+header h1 {
+    display: inline-block;
+    width: 150px;
+    height: 80px;
+    vertical-align: top;
+}
+
+header h1 a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url('../../proyecto/img/LaBerisoOficial.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-size: 0;  
+}
+
+header nav {
+    float: right;
+}
+
+header nav .menu li {
+    display: inline-block;
+    margin: 0 10px;
+    position: relative;
+}
+
+header nav .menu li a {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: color 1s;
+}
+
+header nav .menu li a:hover{
+    color: thistle;
+}
+
+header nav .menu .submenu{
+    background: rgb(194, 26, 26);
+    position: absolute;
+    width: 150px;
+    display: none;
+    box-shadow: 2px 1px 5px black;
+}
+
+header nav .menu li:hover .submenu{
+    display: block;
+}
+
+header nav .menu .submenu li{
+    display: block;
+    margin: 0;
+    padding: 5px;
+}
+
+header nav .menu .submenu li:hover{
+    background: red;
+}
